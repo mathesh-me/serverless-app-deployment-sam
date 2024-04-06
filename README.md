@@ -57,5 +57,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ### Author 📖
 
 - [Mathesh M](https://www.linkedin.com/in/mathesh-me/) on LinkedIn.
-- Checkout this Blog for how build this Application from Scratch: [Serverless Application Development using AWS SAM]()
+- Checkout this Blog for how build this Application from Scratch: [Serverless Application Development using AWS SAM](https://medium.com/@mathesh-me/serverless-application-development-using-aws-sam-d6c75da86cba)
 - You Can also check out my [Medium](https://medium.com/@mathesh-me) for articles on DevOps Tools and Technologies.
