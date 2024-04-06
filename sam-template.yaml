@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: A simple Lambda function.
+Resources:
+  sampleAppFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      CodeUri: src/
+      Description: A simple Lambda function.
+      MemorySize: 128
+      Timeout: 3
+      Events:
+        HelloWorldSAMAPI:
+          Type: Api
+          Properties:
+            Path: /welcome
+            Method: GET
+
+Outputs:
+  ApplicationApi:
+    Description: API Gateway endpoint URL for Prod stage for the Application function
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/welcome/"
